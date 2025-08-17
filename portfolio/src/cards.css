@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Press+Start+2P&family=Tiny5&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.Main{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(255, 252, 228);
+}
+
+
+h1{
+    margin: 0;
+    padding:0;
+    font-size: 8vw;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.mini{
+    font-size: 10px;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+.stars{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+
+}
+.CardContainer{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+}
+
+.bottom{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.bottom p:nth-child(1){
+    width: 40vw;
+    height: 100%;
+    margin-left: 5vw;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+}
+.bottom p:nth-child(2){
+    margin-right: 5vw;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+}
+
+.card{
+    position: relative;
+    width: 120px;
+    aspect-ratio: 5/7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card1{
+    background-color: lightpink ;
+    z-index: 3;
+
+}
+#card2{
+    background-color: lightgreen;
+    z-index: 2;
+
+}
+#card3{
+    background-color: lightcoral ;
+    z-index: 1;
+
+}
+
+.card1text:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 7px;
+    color: black;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.card1text:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-size: 7px;
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bottomleft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.topright{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top:  5px;
+}
